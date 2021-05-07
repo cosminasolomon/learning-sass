@@ -23,6 +23,9 @@
   color: #565656;
   font-family: "Nunito Sans", sans-serif;
 }
+.main span {
+  font-size: larger;
+}
 
 .container1,
 .container2,
