@@ -1,0 +1,52 @@
+* {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//main container start
+.main {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  h1 {
+    color: #75ba8c;
+    font-weight: lighter;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+  p {
+    color: #565656;
+    font-family: "Nunito Sans", sans-serif;
+  }
+}
+//main container end
+
+//containers start
+%container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.container1,
+.container2,
+.container3,
+.container4 {
+  @extend %container;
+}
+.container4 {
+  position: relative;
+  top: 20px;
+  p,
+  h1 {
+    position: relative;
+    top: 25px;
+  }
+}
+//containers end
